@@ -39,14 +39,14 @@ class GameManagerTest {
     @Test
     void shouldThrowNotRegisteredExceptionOne() {
         assertThrows(NotRegisteredException.class, () -> {
-            manager.round("Николай-мастер", "Антон");
+            manager.round("Николай-мастер", "Виталий");
         });
     }
 
     @Test
     void shouldThrowNotRegisteredExceptionTwo() {
         assertThrows(NotRegisteredException.class, () -> {
-            manager.round("Антон", "Николай-мастер");
+            manager.round("Виталий", "Николай-мастер");
         });
     }
 }
